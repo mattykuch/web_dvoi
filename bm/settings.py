@@ -26,6 +26,7 @@ INSTALLED_APPS = (
     #apps
     'account',
     'store',
+    'orders',
 
     'django.contrib.admin',
     'django.contrib.auth',

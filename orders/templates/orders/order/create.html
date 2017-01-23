@@ -1,0 +1,331 @@
+{% extends "store/base.html" %}
+
+{% block title %}
+    Order Form
+{% endblock %}
+
+{% block content %}
+<style type="text/css">
+table {
+  border-collapse: collapse;
+}
+th,
+td,
+caption {
+  border: 1px solid #cecfd5;
+  padding: 10px 15px;
+}
+
+th, caption {
+  background: #395870;
+  color: #fff;
+}
+tbody tr:nth-child(even) {
+  background: #f0f0f2;
+}
+</style>
+
+
+<table>
+    <caption><strong>DISTRICT MONTHLY VACCINE ORDER FORM</strong></caption>
+    <tr>
+        <td colspan="5">District Name : 
+          <select>
+            <option>Abim</option>
+            <option>Adjumani</option>
+            <option>Agago</option>
+            <option>Alebtong</option>
+            <option>Amolatar</option>
+            <option>Amudat</option>
+            <option>Amuria</option>
+            <option>Amuru</option>
+            <option>Apac</option>
+            <option>Arua</option>
+            <option>Budaka</option>
+            <option>Bududa</option>
+            <option>Bugiri</option>
+            <option>Buhweju</option>
+            <option>Buikwe</option>
+            <option>Bukedea</option>
+            <option>Bukomansimbi</option>
+            <option>Bukwa</option>
+            <option>Bulambuli</option>
+            <option>Buliisa</option>
+            <option>Bundibugyo</option>
+            <option>Bushenyi</option>
+            <option>Busia</option>
+            <option>Butaleja</option>
+            <option>Butambala</option>
+            <option>Buvuma</option>
+            <option>Buyende</option>
+            <option>Dokolo</option>
+            <option>Gomba</option>
+            <option>Gulu</option>
+            <option>Hoima</option>
+            <option>Ibanda</option>
+            <option>Iganga</option>
+            <option>Isingiro</option>
+            <option>Jinja</option>
+            <option>Kaabong</option>
+            <option>Kabale</option>
+            <option>Kabarole</option>
+            <option>Kaberamaido</option>
+            <option>Kalangala</option>
+            <option>Kaliro</option>
+            <option>Kalungu</option>
+            <option>Kampala</option>
+            <option>Kamuli</option>
+            <option>Kamwenge</option>
+            <option>Kanungu</option>
+            <option>Kapchorwa</option>
+            <option>Kasese</option>
+            <option>Katakwi</option>
+            <option>Kayunga</option>
+            <option>Kibaale</option>
+            <option>Kiboga</option>
+            <option>Kibuku</option>
+            <option>Kiruhura</option>
+            <option>Kiryandongo</option>
+            <option>Kisoro</option>
+            <option>Kitgum</option>
+            <option>Koboko</option>
+            <option>Kole</option>
+            <option>Kotido</option>
+            <option>Kumi</option>
+            <option>Kween</option>
+            <option>Kyankwanzi</option>
+            <option>Kyegegwa</option>
+            <option>Kyenjojo</option>
+            <option>Lamwo</option>
+            <option>Lira</option>
+            <option>Luuka</option>
+            <option>Luweero</option>
+            <option>Lwengo</option>
+            <option>Lyantonde</option>
+            <option>Manafwa</option>
+            <option>Maracha</option>
+            <option>Masaka</option>
+            <option>Masindi</option>
+            <option>Mayuge</option>
+            <option>Mbale</option>
+            <option>Mbarara</option>
+            <option>Mitooma</option>
+            <option>Mityana</option>
+            <option>Moroto</option>
+            <option>Moyo</option>
+            <option>Mpigi</option>
+            <option>Mubende</option>
+            <option>Mukono</option>
+            <option>Nakapiripirit</option>
+            <option>Nakaseke</option>
+            <option>Nakasongola</option>
+            <option>Namayingo</option>
+            <option>Namutumba</option>
+            <option>Napak</option>
+            <option>Nebbi</option>
+            <option>Ngora</option>
+            <option>Ntoroko</option>
+            <option>Ntungamo</option>
+            <option>Nwoya</option>
+            <option>Otuke</option>
+            <option>Oyam</option>
+            <option>Pader</option>
+            <option>Pallisa</option>
+            <option>Rakai</option>
+            <option>Rubirizi</option>
+            <option>Rukungiri</option>
+            <option>Sembabule</option>
+            <option>Serere</option>
+            <option>Sheema</option>
+            <option>Sironko</option>
+            <option>Soroti</option>
+            <option>Tororo</option>
+            <option>Wakiso</option>
+            <option>Yumbe</option>
+            <option>Zombo</option>
+
+            <option></option>
+
+          </select>
+
+        </td>
+    </tr>
+    <tr>
+        <td colspan="5"> Month : 
+        <select>
+          <option value="jan">January</option>
+          <option value="feb">February</option>
+          <option value="mar">March</option>
+          <option value="apr">April</option>
+          <option value="may">May</option>
+          <option value="jun">June</option>
+          <option value="jul">July</option>
+          <option value="aug">August</option>
+          <option value="sep">September</option>
+          <option value="oct">October</option>
+          <option value="nov">November</option>
+          <option value="dec">December</option>
+        </select>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="5">Name of Submitter : <input type="text" name="submitter"></td>
+    </tr>
+    <tr>
+        <td colspan="5">Title of Submitter : <input type="text" name="title_submitter"></td>
+    </tr>
+    <tr>
+        <td colspan="5">Data of Submission : <input type="date" name="date_submit"></td>
+    </tr>
+  <tr>
+    <th scope="col">Vaccine</th>
+    <th scope="col">Stock Balance</th>
+    <th scope="col">Order Quantity</th>
+    <th scope="col">Adjusted Order</th>
+    <th scope="col">Comment for Order Adjustment</th>
+  </tr>
+  <tr>
+    <td>1. Measles vaccine 10 dose Vial</td>
+    <td><input type="number" name="sbmeasles"></td>
+    <td><input type="number" name="oqmeasles"></td>
+    <td><input type="number" name="aomeasles"></td>
+    <td><input type="text" name="commmeasles"></td>
+  </tr>
+  <tr>
+    <td>2. Bacillus Calmette-Guerin (BCG) 20 dose Vial</td>
+    <td><input type="number" name="sbbcg"></td>
+    <td><input type="number" name="oqbcg"></td>
+    <td><input type="number" name="aobcg"></td>
+    <td><input type="text" name="commbcg"></td>
+  </tr>
+  <tr>
+    <td>3. Human Papilloma Vaccine (HPV) 1 dose Vial</td>
+    <td><input type="number" name="sbhpv"></td>
+    <td><input type="number" name="oqhpv"></td>
+    <td><input type="number" name="aohpv"></td>
+    <td><input type="text" name="commhpv"></td>
+  </tr>
+  <tr>
+    <td>4. Hepatitis .B (HepB) Vaccine 10 dose Vial</td>
+    <td><input type="number" name="sbhepb"></td>
+    <td><input type="number" name="oqhepb"></td>
+    <td><input type="number" name="aohepb"></td>
+    <td><input type="text" name="commhepb"></td>
+  </tr>
+  <tr>
+    <td>5. Tetanus Toxoid (TT) Vaccine 20 dose Vial</td>
+    <td><input type="number" name="sbtt"></td>
+    <td><input type="number" name="oqtt"></td>
+    <td><input type="number" name="aott"></td>
+    <td><input type="text" name="commtt"></td>
+  </tr>
+  <tr>
+    <td>6. Oral Polio Vaccine (OPV) 20 dose Vial</td>
+    <td><input type="number" name="sbopv"></td>
+    <td><input type="number" name="oqopv"></td>
+    <td><input type="number" name="aoopv"></td>
+    <td><input type="text" name="commopv"></td>
+  </tr>
+  <tr>
+    <td>7. Yellow Fever  10 dose Vial</td>
+    <td><input type="number" name="sbyf"></td>
+    <td><input type="number" name="oqyf"></td>
+    <td><input type="number" name="aoyf"></td>
+    <td><input type="text" name="commyf"></td>
+  </tr>
+   <tr>
+    <td>8. Pneumococcal Conjugate (PCV) 2 dose Vial</td>
+    <td><input type="number" name="sbpcv"></td>
+    <td><input type="number" name="oqpcv"></td>
+    <td><input type="number" name="aopcv"></td>
+    <td><input type="text" name="commpcv"></td>
+  </tr>
+   <tr>
+    <td>9. DPT-HIP B-HEB (PENTA) 10 Dose Vial</td>
+    <td><input type="number" name="sbpenta"></td>
+    <td><input type="number" name="oqpenta"></td>
+    <td><input type="number" name="aopenta"></td>
+    <td><input type="text" name="commpenta"></td>
+  </tr>
+   <tr>
+    <td>10. Inactivated Polio vaccine (IPV) 5 dose Vial</td>
+    <td><input type="number" name="sbipv"></td>
+    <td><input type="number" name="oqipv"></td>
+    <td><input type="number" name="aoipv"></td>
+    <td><input type="text" name="commipv"></td>
+  </tr>
+   <tr>
+    <td>11. Rotavirus vaccine 1 dose Vial</td>
+    <td><input type="number" name="sbrota"></td>
+    <td><input type="number" name="oqrota"></td>
+    <td><input type="number" name="aorota"></td>
+    <td><input type="text" name="commrota"></td>
+  </tr>
+   <tr>
+    <td>12. Syringe 0.05 ml</td>
+    <td><input type="number" name="sbs005"></td>
+    <td><input type="number" name="oqs005"></td>
+    <td><input type="number" name="aos005"></td>
+    <td><input type="text" name="comms005"></td>
+  </tr>
+   <tr>
+    <td>13. Syringe 0.5 ml</td>
+    <td><input type="number" name="sbs05"></td>
+    <td><input type="number" name="oqs05"></td>
+    <td><input type="number" name="aos05"></td>
+    <td><input type="text" name="comms05"></td>
+  </tr>
+   <tr>
+    <td>14. Syringe 5 ml</td>
+    <td><input type="number" name="sbs5"></td>
+    <td><input type="number" name="oqs5"></td>
+    <td><input type="number" name="aos5"></td>
+    <td><input type="text" name="comms5"></td>
+  </tr>
+   <tr>
+    <td>15. Syringe 2 ml</td>
+    <td><input type="number" name="sbs2"></td>
+    <td><input type="number" name="oqs2"></td>
+    <td><input type="number" name="aos2"></td>
+    <td><input type="text" name="comms2"></td>
+  </tr>
+  <tr>
+    <td>16. Safety Boxes</td>
+    <td><input type="number" name="sbsb"></td>
+    <td><input type="number" name="oqsb"></td>
+    <td><input type="number" name="aosb"></td>
+    <td><input type="text" name="commsb"></td>
+  </tr>
+  <tr>
+    <td>17. Tetanus Toxoid (TT) Cards</td>
+    <td><input type="number" name="sbttc"></td>
+    <td><input type="number" name="oqttc"></td>
+    <td><input type="number" name="aottc"></td>
+    <td><input type="text" name="commttc"></td>
+  </tr>
+  <tr>
+    <td>18. Child Health Cards (CHC)</td>
+    <td><input type="number" name="sbchc"></td>
+    <td><input type="number" name="oqchc"></td>
+    <td><input type="number" name="aochc"></td>
+    <td><input type="text" name="commchc"></td>
+  </tr>
+  <tr>
+    <td>19. Vaccine Control Books</td>
+    <td><input type="number" name="sbvcb"></td>
+    <td><input type="number" name="oqvcb"></td>
+    <td><input type="number" name="aovcb"></td>
+    <td><input type="text" name="commvcb"></td>
+  </tr>
+  <tr>
+    <td>
+  <input type="submit" value="Submit Order">
+    </td>
+  </tr>
+
+
+</table>
+
+
+
+{% endblock %}

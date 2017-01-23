@@ -32,4 +32,4 @@ class ProfileEditForm(forms.ModelForm):
 
     class Meta:
         model = Profile
-        fields = ('phone_number','date_of_birth', 'photo')
+        fields = ('phone_number', 'photo')
