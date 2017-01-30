@@ -30,7 +30,7 @@
 		#header {
 		    padding:10px 100px;
 		    font-size:14px;
-		    background:#023851; /*green*/
+		    background:#8DC53E; /* NMS green*/
 		    color:#fff; /*white*/
 		    border-bottom:4px solid #006666;
 		    overflow:auto;
@@ -39,7 +39,7 @@
 		#header .logo {
 		    font-family: 'Muli', sans-serif;
 		    float:left;
-		    color:#fff; /*white*/
+		    color:#f3f7cc; /*very light yellow*/
 		    font-size:20px;
 		    margin-right:10%;
 		}
@@ -310,69 +310,12 @@
 		    color:#dc1616;
 		}
 
-		.languages {
-		   float:right;
-		   padding-top:4px;
-		   font-size:14px;
-		}
-
-		.languages ul {
-		    list-style:none;
-		    margin:0;
-		    padding:0;
-		    float:left;
-		}
-
-		.languages ul li {
-		    float:left;
-		    margin:0 0 0 10px;
-		    font-size:14px;
-		}
-
-		.languages p {
-		    float:left;
-		    margin:0;
-		}
-
-		.recommendations {
-		    clear:both;
-		}
-
-		.recommendations div {
-		    float:left;
-		}
-
-		.recommendations img {
-		    width:200px
-		}
-
-		.recommendations p {
-		    clear:both;
-		}
-
-		.recommendations.cart {
-		    width:60%;
-		    float:left;
-		    overflow:auto;
-		}
-
-		.recommendations.cart h3 {
-		    margin-top:0;
-		}
-
-		.recommendations.cart .item {
-		    margin-right:10px;
-		}
-
-		.recommendations.cart img {
-		    width:120px;
-		}
 
 	</style>
 </head>
 <body>
     <div id="header">
-      <span class="logo">Vaccines Store</span>
+      <!--<img src="../static/img/nms_logo.jpg"> -->
       {% if request.user.is_authenticated %}
         <ul class="menu">
             <li {% if section == 'dashboard' %} class='selected' {% endif %} >
