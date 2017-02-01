@@ -118,21 +118,24 @@ ul.errorlist {
 
 #header {
     padding:10px 100px;
-    font-size:14px;
-    background:#8DC53E; /* NMS green*/
-    color:#fff; /*white*/
-    border-bottom:4px solid #006666;
+    font-size:18px;
+    overflow:auto;
+}
+
+#subheader {
+    background:#8DC53E;
+    color:#444;
+    padding:15px 100px;
     overflow:auto;
 }
 
 #header .logo {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     float:left;
-    color:#f3f7cc; /*very light yellow*/
-    font-size:20px;
+    color:#333;
+    font-size:22px;
     margin-right:10%;
 }
-
 
 #subheader .cart {
     float:right;
