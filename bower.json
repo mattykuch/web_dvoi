@@ -1,0 +1,22 @@
+{
+  "name": "bm",
+  "homepage": "https://github.com/mattykuch/web_dvoi",
+  "authors": [
+    "Matthew Kuch <kuch.matthew@gmail.com>"
+  ],
+  "description": "Web based tool for collecting district orders",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "^1.6.1",
+    "bootstrap": "^3.3.7"
+  }
+}

@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import *
 
 class OrderAdmin(admin.ModelAdmin):
-    list_display = ['owner', 'district', 'month', 'submitter', 'title_submitter']
+    list_display = ['district', 'month', 'submitter', 'title_submitter']
 
 
     

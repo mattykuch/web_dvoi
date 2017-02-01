@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from .forms import OrderCreateForm
+from django.views.generic import TemplateView
 
 @login_required
 def order_create(request):
@@ -12,4 +13,8 @@ def order_create(request):
     else:
         form = OrderCreateForm()
     return render(request, 'orders/order/create.html', {'form': form})
+
+
+class HomeView(TemplateView):
+	template_name = 'home.html'
 

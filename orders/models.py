@@ -13,7 +13,7 @@ class District(models.Model):
 
 
 class Order(models.Model):
-	owner = models.ForeignKey('account.Profile')
+	# owner = models.ForeignKey('account.Profile')
 	district = models.ForeignKey(District, on_delete=models.SET_NULL, null=True, blank=True)
 	month = models.CharField(max_length=50, default="e.g. January")
 	submitter = models.CharField(max_length=50, default="e.g. Elton John Mabirizi")
